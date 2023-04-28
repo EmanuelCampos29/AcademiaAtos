@@ -1,0 +1,50 @@
+abr. 27, 2023 8:59:05 PM Principal main
+INFO: Log de informação
+abr. 27, 2023 8:59:05 PM Principal main
+WARNING: Log de Aviso
+abr. 27, 2023 8:59:05 PM Principal main
+SEVERE: Log Severo
+abr. 27, 2023 9:11:51 PM Principal main
+INFO: Log de informação
+abr. 27, 2023 9:11:51 PM Principal main
+WARNING: Log de Aviso
+abr. 27, 2023 9:11:51 PM Principal main
+SEVERE: Log Severo
+abr. 27, 2023 9:13:07 PM Principal main
+INFO: Log de informação
+abr. 27, 2023 9:13:07 PM Principal main
+WARNING: Log de Aviso
+abr. 27, 2023 9:13:07 PM Principal main
+SEVERE: Log Severo
+abr. 27, 2023 9:13:13 PM Principal main
+INFO:  A execução foi concluida com sucesso 
+abr. 27, 2023 11:54:45 PM Principal main
+INFO: Log de informação
+abr. 27, 2023 11:54:45 PM Principal main
+WARNING: Log de Aviso
+abr. 27, 2023 11:54:45 PM Principal main
+SEVERE: Log Severo
+abr. 27, 2023 11:54:53 PM Principal main
+INFO: programa iniciado com sucesso 
+abr. 27, 2023 11:55:19 PM Principal main
+INFO:  A execução foi concluida com sucesso 
+abr. 27, 2023 11:56:07 PM Principal main
+INFO: Log de informação
+abr. 27, 2023 11:56:07 PM Principal main
+WARNING: Log de Aviso
+abr. 27, 2023 11:56:07 PM Principal main
+SEVERE: Log Severo
+abr. 27, 2023 11:56:07 PM Principal main
+INFO: programa iniciado com sucesso 
+abr. 27, 2023 11:56:15 PM Principal main
+INFO:  A execução foi concluida com sucesso 
+abr. 27, 2023 11:56:25 PM Principal main
+INFO: Log de informação
+abr. 27, 2023 11:56:25 PM Principal main
+WARNING: Log de Aviso
+abr. 27, 2023 11:56:25 PM Principal main
+SEVERE: Log Severo
+abr. 27, 2023 11:56:25 PM Principal main
+INFO: programa iniciado com sucesso 
+abr. 27, 2023 11:56:29 PM Principal main
+INFO:  A execução foi concluida com sucesso 
