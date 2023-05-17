@@ -1,0 +1,212 @@
+
+body {
+  background-color: #c4ecf3; 
+}
+
+
+table {
+  display: flex;
+  /* Define um container flexível */
+  justify-content: center;
+  /* Centraliza horizontalmente o conteúdo dentro do container */
+}
+
+.Titulo {
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  font-size: 50px;
+  /* Define o tamanho da fonte como 50 pixels */
+}
+
+.quadrado {
+  background-color: #fff;
+  
+  border: 1px solid #000;
+  /* Define uma borda de 1 pixel sólida na cor preta */
+  height: 80px;
+  /* Define a altura como 80 pixels */
+  width: 80px;
+  /* Define a largura como 80 pixels */
+  text-align: center;
+  /* Centraliza o texto horizontalmente dentro do quadrado */
+}
+
+.quadrado:hover {
+  transform: scale(1.5);
+  /* Realiza um efeito de escala no elemento quando o cursor passa por cima dele */
+}
+
+a {
+  text-decoration: none;
+  /* Remove a decoração de texto sublinhado */
+  color: inherit;
+  /* Define a cor do texto como a cor herdada do elemento pai */
+}
+
+.NumeroAtomico {
+  font-weight: bold;
+  /* Define o peso da fonte como negrito */
+}
+
+.SimboloQuimico {
+  font-size: 1.2em;
+  /* Define o tamanho da fonte como 1.2 vezes o tamanho da fonte do elemento pai */
+  font-weight: bold;
+  /* Define o peso da fonte como negrito */
+}
+
+.Nome {
+  font-size: 0.8em;
+  /* Define o tamanho da fonte como 0.8 vezes o tamanho da fonte do elemento pai */
+}
+
+.PesoAtomico {
+  font-size: 0.8em;
+  /* Define o tamanho da fonte como 0.8 vezes o tamanho da fonte do elemento pai */
+}
+
+.NaoMetais {
+  background-color: #a1d344;
+ 
+}
+
+.GasesNobres {
+  background-color: #20b7e6;
+ 
+}
+
+.MetaisAlcalinos {
+  background-color: rgba(231, 154, 10, 0.904);
+  
+}
+
+.MetaisAlcalinoTerrosos {
+  background-color: #f7f308;
+  
+}
+
+.Semimetais {
+  background-color: rgb(12, 175, 34);
+  
+}
+
+.Halogenios {
+  background-color: aqua;
+ 
+}
+
+.OutrosMetais {
+  background-color: rgb(217, 223, 223);
+  
+}
+
+.MetaisdeTransicao {
+  background-color: #f38b8b;
+  
+}
+
+.Lantanideos {
+  background-color: #7d8ce4;
+  
+}
+
+.Actinidios {
+  background-color: pink
+}
+
+
+.Lnaometais {
+  background-color: #a1d344;
+  
+  border: 1px solid #000;
+  /* Define uma borda sólida de 1 pixel na cor preta */
+  height: 20px;
+  /* Define a altura como 20 pixels */
+  width: 20px;
+  /* Define a largura como 20 pixels */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  transition: transform 0.2s ease-in-out;
+  /* Aplica uma transição suave de 0.2 segundos para a propriedade transform */
+}
+
+.Lgasesnobres {
+  background-color: #20b7e6;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #000;
+}
+
+.Lmetaisalcalinos {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  background-color: rgba(231, 154, 10, 0.904);
+}
+
+.Lmetaisalcalinosterrosos {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  background-color: #f7f308;
+}
+
+.Lsemimetais {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  background-color: rgb(12, 175, 34);
+}
+
+.Lhalogenios {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  background-color: aqua;
+}
+
+.Loutros {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  background-color: rgb(217, 223, 223);
+}
+
+.Lmetaisdetransicao {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  background-color: #f38b8b;
+}
+
+.Llantanideos {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  background-color: #7d8ce4;
+}
+
+.Lactinidios {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  background-color: pink;
+}
