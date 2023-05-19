@@ -1,0 +1,146 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6e6e6;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+.botao1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff7f00;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.botao1:hover {
+	background-color: #3388cc;
+	
+}
+
+.botao1:Active {
+	background-color: #005599;
+}
+
+.Caixa1 {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #66bbff;
+  border-radius: 5pc;
+}
+
+.Caixa2 {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #66bbff;
+  border-radius: 5pc;
+}
+
+.Caixa3 {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #66bbff;
+  border-radius: 5pc;
+}
+
+.Caixa4 {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #66bbff;
+  border-radius: 5pc;
+}
+
+.Caixa5 {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #66bbff;
+  border-radius: 5pc;
+}
+
+#tab {
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+#tab th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  background-color: #000000;
+  color: #fff;
+}
+
+#tab td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #ffffff; /* Cor de fundo das células da tabela */
+  text-align: left
+}
+
+.blocoid {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 5pc;
+}
+
+.botao2 {
+  display: inline-block;
+  
+  background-color: #d51213;
+  padding: 10px 20px;;
+  color: #fff;
+  
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.botao2:hover {
+	background-color: #3388cc;
+	
+}
+
+.botao2:Active {
+	background-color: #005599;
+}
