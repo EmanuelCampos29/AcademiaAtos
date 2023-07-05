@@ -1,0 +1,43 @@
+.red {
+    background-color: red;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  
+  .orange {
+    background-color: orange;
+  }
+  
+  .brown {
+    background-color: brown;
+  }
+  
+  .pink {
+    background-color: pink;
+  }
+  
+  .gray {
+    background-color: gray;
+  }
+  
+  .color-button {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    color: white;
+  }
+  
