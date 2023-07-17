@@ -1,0 +1,118 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            background-color: #069df4;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .container h1,
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-control {
+            border-radius: 5px;
+        }
+
+        .btn-success {
+            margin-top: 20px;
+            background-color: #28a745;
+            color: #fff;
+            border-color: #28a745;
+        }
+
+        .table {
+            margin-bottom: 20px;
+        }
+
+        .table th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: #fff;
+            border-color: #dc3545;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 50%;
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .descricao-cargo {
+            height: 600px; /* Defina a altura desejada em pixels */
+            resize: vertical;
+        }
+        
+         .detalhe-vaga {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+            font-family: "Arial", sans-serif;
+        }
+        
+ 

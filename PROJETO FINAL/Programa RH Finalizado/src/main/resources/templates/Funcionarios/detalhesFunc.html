@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plataforma RH</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" th:href="@{/css/funcionarios/detalheFunc.css}" />
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/">Plataforma RH</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link active"
+							aria-current="page" href="/">Home</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container">
+		<h1>Detalhes do funcionário:</h1>
+
+		<form>
+			<div class="mb-3">
+				<label for="nome" class="form-label">Nome:</label> <input
+					type="text" class="form-control" id="nome"
+					th:value="${funcionario.nome}" readonly>
+			</div>
+			<div class="mb-3">
+				<label for="data" class="form-label">Data de nascimento:</label> <input
+					type="text" class="form-control" id="data"
+					th:value="${funcionario.data}" readonly>
+			</div>
+			<div class="mb-3">
+				<label for="email" class="form-label">E-mail:</label> <input
+					type="email" class="form-control" id="email"
+					th:value="${funcionario.email}" readonly>
+			</div>
+			<div class="mb-3">
+				<label for="cpf" class="form-label">CPF:</label> <input type="text"
+					class="form-control" id="cpf" th:value="${funcionario.cpf}"
+					readonly>
+			</div>
+			<div class="mb-3">
+				<label for="telefone" class="form-label">Telefone:</label> <input
+					type="tel" class="form-control" id="telefone"
+					th:value="${funcionario.telefone}" readonly>
+			</div>
+			<div class="mb-3">
+				<label for="salario" class="form-label">Salário:</label> <input
+					type="text" class="form-control" id="salario"
+					th:value="${funcionario.salario}" readonly>
+			</div>
+
+
+		</form>
+
+
+
+
+	</div>
+	<br>
+	<div class="d-grid gap-2">
+		<a href="/ListaFunc" class="btn btn-primary">Voltar</a>
+	</div>
+
+
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

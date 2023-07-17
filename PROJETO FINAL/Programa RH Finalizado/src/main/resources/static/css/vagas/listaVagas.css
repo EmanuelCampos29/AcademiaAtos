@@ -1,0 +1,59 @@
+
+        .navbar {
+            background-color: #069df4;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            margin-right: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .nav-link {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .descricao-vaga {
+            width: 550px; 
+            min-height: 8em;
+            height: 8em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            text-align: justify;
+        }
+        
+        .titulo-vagas {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+            font-family: "Arial", sans-serif;
+        }
+        
+        .acoesb {
+         width: 250px;
+        }
+
+ 

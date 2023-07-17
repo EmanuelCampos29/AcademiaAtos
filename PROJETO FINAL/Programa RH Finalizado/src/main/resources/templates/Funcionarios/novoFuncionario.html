@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PLataforma RH</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" th:href="@{/css/funcionarios/novoFunc.css}" />
+</head>
+
+<body>
+
+
+	<header>
+
+		<nav class="navbar navbar-expand-lg ">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/">Controlador Funcionarios</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="/ListaFunc">Exibir
+								Funcionários</a></li>
+						<li class="nav-item"><a class="nav-link" href="/cadastroFunc">Cadastrar
+								Novo Funcionário</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<span th:text="${mensagem}" class="mensagem-sucesso text-center"></span>
+		</div>
+	</header>
+
+
+	<div class="container">
+		<h1>Cadastrar Funcionarios</h1>
+		<form method="post" action="/cadastroFun">
+			<div class="form-group">
+				<label for="nome">Nome do Funcionario:</label> <input type="text"
+					class="form-control" id="nome"
+					placeholder="Insira o nome do funcionario" name="nome" required>
+				<small class="form-text text-muted"></small>
+			</div>
+
+			<div class="col">
+				<div class="form-group">
+					<label for="data">Data Nascimento:</label> <input type="date"
+						class="form-control" id="data" placeholder="Insira a data"
+						name="data" required> <small class="form-text text-muted"></small>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="form-group">
+					<label for="email">E-mail:</label> <input type="text"
+						class="form-control" id="email" placeholder="Insira o email"
+						name="email" required> <small class="form-text text-muted"></small>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="form-group">
+					<label for="cpf">CPF:</label> <input type="text"
+						class="form-control" id="cpf" placeholder="Insira o CPF"
+						name="cpf" required> <small class="form-text text-muted"></small>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="form-group">
+					<label for="telefone">Telefone:</label> <input type="text"
+						class="form-control" id="telefone" placeholder="Insira o telefone"
+						name="telefone" required> <small
+						class="form-text text-muted"></small>
+				</div>
+
+				<div class="col">
+					<div class="form-group">
+						<label for="salario">Salario:</label> <input type="text"
+							class="form-control formatar-salario" id="salario"
+							placeholder="Insira o Salario" name="salario" required> <small
+							class="form-text text-muted"></small>
+					</div>
+
+
+				</div>
+			</div>
+
+
+			<br>
+			<button type="submit" class="btn btn-success">Adicionar
+				Funcionario</button>
+		</form>
+	</div>
+
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+
+
+
+
+</html>

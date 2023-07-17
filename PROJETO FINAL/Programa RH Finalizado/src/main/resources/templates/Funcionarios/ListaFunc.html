@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plataforma RH</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+	crossorigin="anonymous">
+<link rel="stylesheet" th:href="@{/css/funcionarios/listaFunc.css}" />
+
+
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg ">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/">Controlador Funcionarios</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="/ListaFunc">Exibir
+								Funcionários</a></li>
+						<li class="nav-item"><a class="nav-link" href="/cadastroFunc">Cadastrar
+								Novo Funcionário</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container">
+		<h1 class="text-center">Lista de Funcionários</h1>
+		<br>
+		<table class="table table-hover table-responsive w-auto table-striped">
+			<thead>
+				<tr>
+					<th scope="col">Nome:</th>
+					<th scope="col">Data de Nascimento:</th>
+					<th scope="col">E-mail</th>
+					<th scope="col">CPF</th>
+					<th scope="col">Telefone:</th>
+					<th scope="col">Salario:</th>
+
+					<th scope="col">Ações:</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="funcionario : ${Funcionarios}">
+					<td><span th:text="${funcionario.nome}"></span></td>
+					<td><span th:text="${funcionario.data}"></span></td>
+					<td><span th:text="${funcionario.email}"></span></td>
+					<td><span th:text="${funcionario.cpf}"></span></td>
+					<td><span th:text="${funcionario.telefone}"></span></td>
+					<td>R$ <span th:text="${funcionario.salario}"></span>
+					</td>
+
+					<td>
+						<div class="btn-group" role="group" aria-label="Ações">
+							<a th:href="@{'/deleteFunc?id=' + ${funcionario.id}}"
+								onclick="return confirmarExclusao('${funcionario.id}')">
+								<button type="button" class="btn btn-danger btn-small">Excluir</button>
+							</a> <a th:href="@{'/editarFuncionario?id=' + ${funcionario.id}}">
+								<button type="button" class="btn btn-primary btn-small">Editar</button>
+							</a> <a th:href="@{'/detalheFuncionario/' + ${funcionario.id}}">
+								<button type="button" class="btn btn-info btn-small">Ver
+									Funcionário</button>
+							</a>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script>
+    // Seletor para todos os elementos com a classe "formatar-salario"
+    var elementosSalario = document.querySelectorAll('.formatar-salario');
+
+    // Itera sobre os elementos e formata o valor do salário
+    elementosSalario.forEach(function(elemento) {
+      var salario = parseFloat(elemento.value);
+      elemento.value = salario.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    });
+    
+    
+    function confirmarExclusao(codigo) {
+        if (confirm("Tem certeza que deseja excluir este funcionário?")) {
+            window.location.href = "/deleteFunc?id=" + codigo;
+        } else {
+            return false; // Retorna false para interromper o evento onclick
+        }
+    }
+
+  </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<title>Plataforma RH</title>
+<link rel="stylesheet" th:href="@{/css/vagas/index.css}" />
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/">Plataforma RH</a>
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="/logout">Sair</a>
+					</li>
+				</ul>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container">
+		<br>
+		<br>
+
+		<div class="row">
+			<div class="col">
+				<div class="card text-center border-0">
+					<div class="card-header card-title">
+						<h3>Portal Vagas</h3>
+					</div>
+					<div class="card-body">
+						<br> <img src="/images/img10.jpg" alt="Imagem de Vagas"
+							class="img-fluid">
+						<div class="content">
+							<p class="card-text">Módulo responsável pelo setor de Vagas</p>
+							<a href="/ListarVaga" class="btn btn-primary">Exibir Vagas</a> <a
+								th:if="${#request.isUserInRole('ROLE_ADMIN')}"
+								href="/NovoCadastroVaga" class="btn btn-success">Cadastrar
+								Nova Vaga</a> <br>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<div th:unless="${#request.isUserInRole('ROLE_USER')}">
+			<div class="container">
+				<br>
+				<br>
+
+				<div class="row">
+					<div class="col">
+						<div class="card text-center">
+							<div class="card-header card-title">
+								<h3>Funcionários</h3>
+							</div>
+							<div class="card-body">
+								<br> <img src="/images/img7.jpg" alt="Imagem de Vagas"
+									class="img-fluid">
+								<p class="card-text">Módulo responsável pelos setores de
+									Funcionários</p>
+								<a href="/ListaFunc" class="btn btn-primary">Exibir
+									Funcionários</a> <a th:if="${#request.isUserInRole('ROLE_ADMIN')}"
+									href="/cadastroFunc" class="btn btn-success">Cadastrar
+									Funcionário</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
